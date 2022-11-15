@@ -115,28 +115,26 @@
 			</div>
 		</div>
 
-		<!-- <div class="container">
+		<div class="container">
 			<section id="abstract">
 				<h4><i class="fa fa-chrome" style="padding-right: 10px;"></i>What is it?</h4>
 
 				<div class="container">
 					<p>
-
-						Spook.js is a new transient execution side channel attack which targets the Chrome web browser.
+            Hacky Racer is a generic timer construction method to facilitate fine-grained information extraction for most side-channel attack, especially those on a restricted environment such as browsers.
+            It exploits and only depends on Instruction-level Parallelism (ILP) from out-of-order CPUs, therefore hard to mitigate.
+ 
+						<!-- Spook.js is a new transient execution side channel attack which targets the Chrome web browser.
 						We show that despite Google's attempts to mitigate <a
 							href="https://spectreattack.com/">Spectre</a> by deploying <a
 							href="https://www.chromium.org/Home/chromium-security/site-isolation">Strict Site
 							Isolation</a>, information extraction via malicious JavaScript code is still possible in
-						some cases.
+						some cases. -->
 					</p>
 					<p>
-						More specifically, we show that an attacker-controlled webpage can know which other pages from
-						the same websites a
-						user is currently browsing, retrieve sensitive information from these pages, and even recover
-						login credentials (e.g., username and password) when they are autofilled. We further demonstrate
-						that the attacker
-						can retrieve data from Chrome extensions (such as credential managers)
-						if a user installs a malicous extension.
+						Specifically, Hacky Racer is built based on two types of gadgets, Racing Gadgets and Magnifier Gadgets, each of which can be utilized individually. 
+            Those two gadgets together converts a small timing difference into a theoretically large value. Therefore, any mitigations that try to stop attackers from 
+            accessing a fine-grained timer are under an extremely high risk of failure. For example, disabling ShareArryBuffer on the brower alone are now even more incapable to stop any side-channel attack.
 					</p>
 
 					<div class="row" style="padding-top: 10px; text-align: center;">
@@ -148,7 +146,7 @@
 						</div>
 					</div>
 
-					<div class="modal fade" id="cite-spookjs" tabindex="-1" role="dialog"
+					<!-- <div class="modal fade" id="cite-spookjs" tabindex="-1" role="dialog"
 						aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 							<div class="modal-content">
@@ -177,7 +175,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</section>
 
@@ -206,23 +204,13 @@
 			</section>
 
 			<section id="people">
-				<h4 style="padding-top: 20px;"><i class="fa fa-users" style="padding-right: 10px;"></i>Who are the people behind Spook.js?</h4>
+				<h4 style="padding-top: 20px;"><i class="fa fa-users" style="padding-right: 10px;"></i>Who found Hacky Racer?</h4>
 				<div class="container">
 					<ul>
-                        <li><a href="https://www.linkedin.com/in/agarwalayush9">Ayush Agarwal</a> <span class="badge badge-michigan"><a class="univ"
-									href="https://umich.edu/">University of Michigan</a></span></li>
-						<li>Sioli O'Connell <span class="badge badge-adelaide"><a class="univ"
-									href="https://www.adelaide.edu.au/">University of Adelaide</a></span></li>
-						<li><a href="https://jasonkim.page/">Jason Kim </a><span class="badge badge-gatech"><a class="univ"
-									href="https://www.gatech.edu/">Georgia Institute of Technology</a></span></li>
-						<li>Shaked Yehezkel <span class="badge badge-tau"><a class="univ"
-									href="https://english.tau.ac.il/">Tel Aviv University</a></span></li>
-						<li><a href="https://www.cc.gatech.edu/~genkin/">Daniel Genkin</a> <span class="badge badge-gatech"><a class="univ"
-									href="https://www.gatech.edu/">Georgia Institute of Technology</a></span></li>
-						<li><a href="https://eyalro.net/">Eyal Ronen</a> <span class="badge badge-tau"><a class="univ"
-									href="https://english.tau.ac.il/">Tel Aviv University</a></span></li>
-						<li><a href="https://cs.adelaide.edu.au/~yval">Yuval Yarom</a> <span class="badge badge-adelaide"><a class="univ"
-									href="https://www.adelaide.edu.au/">University of Adelaide</a></span></li>
+                        <li><a href="https://www.linkedin.com/in/agarwalayush9">Haocheng Xiao</a> <span class="badge badge-michigan"><a class="univ"
+									href="https://umich.edu/">University of Edinburgh</a></span></li>
+						<li>Sam Ainsworth <span class="badge badge-adelaide"><a class="univ"
+									href="https://www.adelaide.edu.au/">University of Edinburgh</a></span></li>
 					</ul>
 					<p style="text-align: center;"><b>Contact us at <a href="mailto:info@spookjs.com">info@spookjs.com</a></b></p>
 					<br>
@@ -258,7 +246,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="accordion-item">
+        </div>
+					<!-- <div class="accordion-item">
 						<h2 class="accordion-header" id="panelsStayOpen-headingImpact">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 								data-bs-target="#panelsStayOpen-collapseImpact" aria-expanded="false"
@@ -782,9 +771,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-			</section>
+			<!-- </section>
 			<section id="acknowledgments">
 				<h4><i class="fa fa-comments" style="padding-right: 10px;"></i>Acknowledgments</h4>
 				<div class="block">
